@@ -14,24 +14,44 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'fixitall');
+/*added logic by Ken Shoufer*/
+if ($_SERVER['SERVER_NAME'] === "localhost") {
+    // ** MySQL settings - You can get this info from your web host ** //
+    /** The name of the database for WordPress */
+    define('DB_NAME', 'fixitall');
+    /** MySQL database username */
+    define('DB_USER', 'root');
+    /** MySQL database password */
+    define('DB_PASSWORD', '');
+    /** MySQL hostname */
+    define('DB_HOST', 'localhost');
+    /** Database Charset to use in creating database tables. */
+    define('DB_CHARSET', 'utf8');
+    /** The Database Collate type. Don't change this if in doubt. */
+    define('DB_COLLATE', '');
+    define('WP_HOME','http://localhost/fixitall');
+    define('WP_SITEURL','http://localhost/fixitall');
+} else {
+    // ** MySQL settings - You can get this info from your web host ** //
+    /** The name of the database for WordPress */
+    define('DB_NAME', 'backcou2_fixitall');
+    /** MySQL database username */
+    define('DB_USER', 'backcou2_bcr');
+    /** MySQL database password */
+    define('DB_PASSWORD', 'tR(SW28(P1');
+    /** MySQL hostname */
+    define('DB_HOST', 'localhost');
+    /** Database Charset to use in creating database tables. */
+    define('DB_CHARSET', 'utf8');
+    /** The Database Collate type. Don't change this if in doubt. */
+    define('DB_COLLATE', '');
+    define('WP_HOME','http://http://dev1.backcountryreporter.info/fixitall');
+    define('WP_SITEURL','http://dev1.backcountryreporter.info/fixitall');
+};
+/*end added logic*/
 
-/** MySQL database username */
-define('DB_USER', 'root');
 
-/** MySQL database password */
-define('DB_PASSWORD', '');
 
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
-
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
-
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.
