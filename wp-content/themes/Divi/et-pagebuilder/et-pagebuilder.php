@@ -1,5 +1,5 @@
 <?php
-define( 'ET_PB_VERSION', '1.0' );
+define( 'ET_PB_VERSION', '1.9' );
 define( 'ET_PB_DIR', trailingslashit( dirname(__FILE__) ) );
 define( 'ET_PB_URI', get_template_directory_uri() . '/et-pagebuilder' );
 

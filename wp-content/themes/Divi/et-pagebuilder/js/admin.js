@@ -219,7 +219,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 
 		//Views
 
-		ET_PageBuilder.SectionView = Backbone.View.extend( {
+		ET_PageBuilder.SectionView = window.wp.Backbone.View.extend( {
 
 			className : 'et_pb_section',
 
@@ -378,7 +378,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 			}
 		} );
 
-		ET_PageBuilder.RowView = Backbone.View.extend( {
+		ET_PageBuilder.RowView = window.wp.Backbone.View.extend( {
 			className : 'et_pb_row',
 
 			template : _.template( $('#et-builder-row-template').html() ),
@@ -471,7 +471,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 			}
 		} );
 
-		ET_PageBuilder.ModalView = Backbone.View.extend( {
+		ET_PageBuilder.ModalView = window.wp.Backbone.View.extend( {
 
 			className : 'et_pb_modal_settings_container',
 
@@ -631,7 +631,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 
 		} );
 
-		ET_PageBuilder.ColumnView = Backbone.View.extend( {
+		ET_PageBuilder.ColumnView = window.wp.Backbone.View.extend( {
 			template : _.template( $('#et-builder-column-template').html() ),
 
 			events : {
@@ -719,7 +719,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 			}
 		} );
 
-		ET_PageBuilder.ColumnSettingsView = Backbone.View.extend( {
+		ET_PageBuilder.ColumnSettingsView = window.wp.Backbone.View.extend( {
 
 			className : 'et_pb_modal_settings',
 
@@ -775,7 +775,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 
 		} );
 
-		ET_PageBuilder.SaveLayoutSettingsView = Backbone.View.extend( {
+		ET_PageBuilder.SaveLayoutSettingsView = window.wp.Backbone.View.extend( {
 
 			className : 'et_pb_modal_settings',
 
@@ -905,7 +905,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 
 		} );
 
-		ET_PageBuilder.ModulesView = Backbone.View.extend( {
+		ET_PageBuilder.ModulesView = window.wp.Backbone.View.extend( {
 
 			className : 'et_pb_modal_settings',
 
@@ -948,7 +948,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 
 		} );
 
-		ET_PageBuilder.ModuleSettingsView = Backbone.View.extend( {
+		ET_PageBuilder.ModuleSettingsView = window.wp.Backbone.View.extend( {
 
 			className : 'et_pb_module_settings',
 
@@ -1008,6 +1008,8 @@ var ET_PageBuilder = ET_PageBuilder || {};
 								window.switchEditors.go('et_pb_content_new', 'tmce');
 
 							et_pb_set_content( 'et_pb_content_new', content );
+
+							window.wpActiveEditor = 'et_pb_content_new';
 						}, 100 );
 					} else {
 						var view_cid = ET_PageBuilder_Layout.generateNewId();
@@ -1049,7 +1051,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 
 		} );
 
-		ET_PageBuilder.AdvancedModuleSettingsView = Backbone.View.extend( {
+		ET_PageBuilder.AdvancedModuleSettingsView = window.wp.Backbone.View.extend( {
 			initialize : function() {
 				this.listenTo( ET_PageBuilder_Events, 'et-advanced-module:updated', this.generateContent );
 
@@ -1182,7 +1184,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 
 		} );
 
-		ET_PageBuilder.AdvancedModuleSettingView = Backbone.View.extend( {
+		ET_PageBuilder.AdvancedModuleSettingView = window.wp.Backbone.View.extend( {
 			tagName : 'li',
 
 			initialize : function() {
@@ -1241,7 +1243,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 			}
 		} );
 
-		ET_PageBuilder.AdvancedModuleSettingTitleView = Backbone.View.extend( {
+		ET_PageBuilder.AdvancedModuleSettingTitleView = window.wp.Backbone.View.extend( {
 			tagName : 'span',
 
 			className : 'et-sortable-title',
@@ -1265,7 +1267,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 			}
 		} );
 
-		ET_PageBuilder.AdvancedModuleSettingEditViewContainer = Backbone.View.extend( {
+		ET_PageBuilder.AdvancedModuleSettingEditViewContainer = window.wp.Backbone.View.extend( {
 			className : 'et_pb_modal_settings_container',
 
 			initialize : function() {
@@ -1314,7 +1316,8 @@ var ET_PageBuilder = ET_PageBuilder || {};
 			removeView : function( event ) {
 				if ( event ) event.preventDefault();
 
-				if ( this.$el.find( '#et_pb_content_new' ) )
+				// remove advanced tab WYSIWYG, only if the close button is clicked
+				if ( this.$el.find( '#et_pb_content_new' ) && event )
 					et_pb_tinymce_remove_control( 'et_pb_content_new' );
 
 				if ( this.child_view )
@@ -1349,7 +1352,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 			}
 		} );
 
-		ET_PageBuilder.AdvancedModuleSettingEditView = Backbone.View.extend( {
+		ET_PageBuilder.AdvancedModuleSettingEditView = window.wp.Backbone.View.extend( {
 			className : 'et_pb_module_settings',
 
 			initialize : function() {
@@ -1385,6 +1388,8 @@ var ET_PageBuilder = ET_PageBuilder || {};
 							window.switchEditors.go('et_pb_content_new', 'tmce');
 
 						et_pb_set_content( 'et_pb_content_new', content );
+
+						window.wpActiveEditor = 'et_pb_content_new';
 					}, 100 );
 				}
 
@@ -1396,7 +1401,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 			}
 		} );
 
-		ET_PageBuilder.BlockModuleView = Backbone.View.extend( {
+		ET_PageBuilder.BlockModuleView = window.wp.Backbone.View.extend( {
 
 			className : 'et_pb_module_block',
 
@@ -1457,7 +1462,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 
 		} );
 
-		ET_PageBuilder.AppView = Backbone.View.extend( {
+		ET_PageBuilder.AppView = window.wp.Backbone.View.extend( {
 
 			el : $('#et_pb_main_container'),
 
@@ -2029,6 +2034,8 @@ var ET_PageBuilder = ET_PageBuilder || {};
 		function et_pb_deactivate_builder() {
 			et_pb_set_content( 'content', $et_pb_old_content.val() );
 
+			window.wpActiveEditor = 'content';
+
 			$use_builder_custom_field.val( 'off' );
 
 			$builder.hide();
@@ -2117,7 +2124,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 		function et_pb_get_content( textarea_id ) {
 			var content;
 
-			content = typeof window.tinyMCE !== 'undefined' && typeof window.tinyMCE.get( textarea_id ) !== 'undefined' && ! window.tinyMCE.get( textarea_id ).isHidden()
+			content = typeof window.tinyMCE !== 'undefined' && window.tinyMCE.get( textarea_id ) && ! window.tinyMCE.get( textarea_id ).isHidden()
 				? window.tinyMCE.get( textarea_id ).getContent()
 				: $( '#' + textarea_id ).val();
 
@@ -2125,15 +2132,20 @@ var ET_PageBuilder = ET_PageBuilder || {};
 		}
 
 		function et_pb_set_content( textarea_id, content ) {
-			if ( typeof window.tinyMCE !== 'undefined' && typeof window.tinyMCE.get( textarea_id ) !== 'undefined' && ! window.tinyMCE.get( textarea_id ).isHidden() )
+			if ( typeof window.tinyMCE !== 'undefined' && window.tinyMCE.get( textarea_id ) && ! window.tinyMCE.get( textarea_id ).isHidden() )
 				window.tinyMCE.get( textarea_id ).setContent( window.switchEditors.wpautop( content ), { format : 'html'  } );
 			else
 				$( '#' + textarea_id ).val( content );
 		}
 
 		function et_pb_tinymce_remove_control( textarea_id ) {
-			if ( typeof window.tinyMCE !== 'undefined' )
-				window.tinyMCE.execCommand( 'mceRemoveControl', false, textarea_id );
+			if ( typeof window.tinyMCE !== 'undefined' ) {
+				window.tinyMCE.execCommand( 'mceRemoveEditor', false, textarea_id );
+
+				if ( typeof window.tinyMCE.get( textarea_id ) !== 'undefined' ) {
+					window.tinyMCE.remove( '#' + textarea_id );
+				}
+			}
 		}
 	} );
 
