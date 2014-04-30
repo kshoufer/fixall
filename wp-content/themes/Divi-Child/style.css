@@ -1,0 +1,214 @@
+/*
+Theme Name: Divi Child
+Author: Ken Shoufer
+Template: Divi
+*/
+
+@import url(../Divi/style.css);
+
+.et_pb_text {
+    min-height: 150px;
+}
+
+#main-header {
+background-color: #333;
+}
+
+#top-menu ul li a {
+color: #fff;
+}
+
+#top-menu ul li a:hover {
+text-decoration: underline;
+color: #fff;
+}
+
+#et_top_search {
+    display: none;
+}
+
+
+#logo_mobile {
+    display: none;
+}
+
+#footer-info, #footer-info a  {
+    color: #fff;
+}
+
+.et-social-icon a {
+    color: #fff;
+}
+
+#content-area table td, #content-area table th {
+    padding: 0 .5em .5em 0;
+}
+
+    #kenshoufer-boxes {
+        -moz-column-count:2;
+        -moz-column-gap:10px;
+        /*-webkit-column-count:2;*/
+        -webkit-column-gap:10px;
+        column-count:4;
+        column-gap:10px;
+    }
+    .kenshoufer-box {
+        margin:0 0 10px 0;
+        display:inline-block;
+        width:262px;
+        height:140px;
+        padding:15px;
+        background:#e6e2df;
+        color:#555;
+        -webkit-transition:all 0.2s ease;
+        -moz-transition:all 0.2s ease;
+        background-position:320px 50%;
+        background-repeat:no-repeat;
+        text-decoration: none;
+    }
+    .kenshoufer-box h5 {
+        font: bold 1.3em Sans-Serif !important;
+        text-transform:uppercase;
+        font-size:38px;
+        line-height:1;
+        padding:0 0 10px 0;
+    }
+    .kenshoufer-box:hover h5 {
+        text-shadow:2px 2px 5px rgba(0,0,0,0.8);
+        color:white;
+    }
+    .kenshoufer-box:hover p {
+        color:white;
+    }
+    .kenshoufer-box p {
+        font-size:12px;
+        width:175px;
+        line-height:1.5;
+    }
+    .kenshoufer-box:hover {
+        background-position:200px 50%;
+        -moz-box-shadow:    3px 5px 2px 2px #777;
+        -webkit-box-shadow: 3px 5px 2px 2px #777;
+        box-shadow:         3px 5px 2px 2px #777;
+    }
+
+    
+    #kenshoufer-diw {
+        background-image:url(images/robot1.png);
+        background-position: 300px 30px;
+    }
+    #kenshoufer-diw:hover {
+        /*background-color:#237abe;*/
+        background-color:#800020;
+        background-position: 100px 30px;
+    }
+
+/*    
+@media only screen and ( max-width: 800px ) { 
+    #kenshoufer-boxes {
+        display: none;
+    }
+}
+*/
+/*
+.et_pb_slide {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.et_pb_slider .et_pb_slide, .et_pb_section {
+    background-size: contain;
+}
+
+.et_pb_section {
+    background-repeat: repeat;
+    background-size: 132px;
+}
+.et_pb_text p {
+    line-height: 1.5;
+    font-size: 25px;
+}
+
+
+#logo_mobile {
+    display: none;
+}
+
+.et_pb_promo_description {
+    font-size: 30px;
+}
+
+.et_pb_promo_description p {
+    line-height: 2;
+}
+
+.et_pb_contact p input, .et_pb_contact p textarea {
+    background-color: #fff;
+}
+
+.et-pb-arrow-next, .et-pb-arrow-prev {
+    font-size: 8em;
+}
+
+.main_title {
+    display: none;
+}
+
+#slider1 {
+    width: 100%;
+}
+
+#small-image {
+    display: none;
+}
+
+#et_top_search {
+    display: none;
+}
+
+.vfb-checkbox, .vfb-radio {
+-webkit-appearance: checkbox;
+}
+
+.et_pb_slider .et_pb_slide {
+    box-shadow:none;
+}
+
+.et-pb-arrow-prev, .et-pb-arrow-next {
+    background-color: rgba(0, 0, 0, .07);
+}
+
+
+@media only screen and ( max-width: 479px ) {
+
+#small-image {
+    display: inline;
+}
+
+
+#home-slider
+{
+    display: none;
+}
+
+    
+.et_pb_slide {
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+#logo {
+    display: none;
+}
+
+#logo_mobile {
+    display: block;
+    width: 50%;
+}
+
+#et_mobile_nav_menu {
+    margin: -40px 0 0 0;
+}
+
+}*/
+/****end max-width: 479px****/
