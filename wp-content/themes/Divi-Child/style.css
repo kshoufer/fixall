@@ -11,12 +11,17 @@ Template: Divi
 }
 
 #main-header {
-background-color: #333;
+background-color: #0D3A77;
 }
 
 #top-menu ul li a {
 color: #fff;
 }
+
+.sub-menu a {
+color: #333 !important;
+}
+
 
 #top-menu ul li a:hover {
 text-decoration: underline;
