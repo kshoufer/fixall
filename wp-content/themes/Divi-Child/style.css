@@ -12,7 +12,7 @@ Template: Divi
 
 #main-header {
 /*background-color: #0D3A77;*/
-background-color: #de3800;
+background-color: #DC6E24;
 }
 
 #top-menu ul li a {
@@ -36,6 +36,10 @@ color: #fff;
 
 #logo_mobile {
     display: none;
+}
+
+#main-footer {
+    background-color: #DC6E24 !important;
 }
 
 #footer-info, #footer-info a  {
