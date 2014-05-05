@@ -113,6 +113,19 @@ color: #fff;
         background-position: 100px 30px;
     }
 
+@media only screen and ( max-width: 479px ) {
+
+  #logo {
+    display: none;
+  }
+
+  #logo_mobile {
+    display: block;
+    width: 50%;
+  }
+
+}    
+
 /*    
 @media only screen and ( max-width: 800px ) { 
     #kenshoufer-boxes {

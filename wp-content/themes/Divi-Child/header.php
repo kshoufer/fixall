@@ -24,6 +24,7 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 	<?php $template_directory_uri = get_template_directory_uri(); ?>
+	<?php $home_url = esc_url( home_url( '/' ) ); ?>
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( $template_directory_uri . '/js/html5.js"' ); ?>" type="text/javascript"></script>
 	<![endif]-->
@@ -42,8 +43,7 @@
 				? $user_logo
 				: $template_directory_uri . '/images/logo.png';
                         
-                        $logo_mobile = $template_directory_uri . '/images/logo_mobile.png';
-                        /*$logo_mobile = $template_directory_uri . '/images/facebook_logo1.svg';*/
+                        $logo_mobile = $home_url . '/wp-content/uploads/2014/05/logosmall.png';
 		?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" />
