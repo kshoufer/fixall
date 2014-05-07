@@ -18,7 +18,7 @@
 if ($_SERVER['SERVER_NAME'] === "localhost") {
     // ** MySQL settings - You can get this info from your web host ** //
     /** The name of the database for WordPress */
-    define('DB_NAME', 'fixitall');
+    define('DB_NAME', 'fixall');
     /** MySQL database username */
     define('DB_USER', 'root');
     /** MySQL database password */
@@ -29,12 +29,12 @@ if ($_SERVER['SERVER_NAME'] === "localhost") {
     define('DB_CHARSET', 'utf8');
     /** The Database Collate type. Don't change this if in doubt. */
     define('DB_COLLATE', '');
-    define('WP_HOME','http://localhost:8080/fixitall');
-    define('WP_SITEURL','http://localhost:8080/fixitall');
+    define('WP_HOME','http://localhost:8080/fixall');
+    define('WP_SITEURL','http://localhost:8080/fixall');
 } else {
     // ** MySQL settings - You can get this info from your web host ** //
     /** The name of the database for WordPress */
-    define('DB_NAME', 'backcou2_fixitall');
+    define('DB_NAME', 'backcou2_fixall');
     /** MySQL database username */
     define('DB_USER', 'backcou2_bcr');
     /** MySQL database password */
@@ -45,8 +45,8 @@ if ($_SERVER['SERVER_NAME'] === "localhost") {
     define('DB_CHARSET', 'utf8');
     /** The Database Collate type. Don't change this if in doubt. */
     define('DB_COLLATE', '');
-    define('WP_HOME','http://dev1.backcountryreporter.info/fixitall');
-    define('WP_SITEURL','http://dev1.backcountryreporter.info/fixitall');
+    define('WP_HOME','http://dev1.backcountryreporter.info/fixall');
+    define('WP_SITEURL','http://dev1.backcountryreporter.info/fixall');
 };
 /*end added logic*/
 
