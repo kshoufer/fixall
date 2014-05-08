@@ -124,6 +124,11 @@ color: #fff;
     width: 50%;
   }
 
+  bgmp_map-canvas {
+    width: 300px !important;
+    height: 250px !important;
+  }
+
 }    
 
 #et_mobile_nav_menu {
