@@ -45,8 +45,8 @@ if ($_SERVER['SERVER_NAME'] === "localhost") {
     define('DB_CHARSET', 'utf8');
     /** The Database Collate type. Don't change this if in doubt. */
     define('DB_COLLATE', '');
-    define('WP_HOME','http://dev1.backcountryreporter.info/fixall');
-    define('WP_SITEURL','http://dev1.backcountryreporter.info/fixall');
+    define('WP_HOME','http://dev1.ken-shoufer.com/fixall');
+    define('WP_SITEURL','http://dev1.ken-shoufer.com/fixall');
 };
 /*end added logic*/
 
