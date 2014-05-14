@@ -132,6 +132,10 @@ color: #fff;
     line-height: 2em;
     }
 
+    .et_pb_slider {
+        display: none;
+    }
+
 
   #logo {
     display: none;
