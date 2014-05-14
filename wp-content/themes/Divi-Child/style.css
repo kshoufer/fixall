@@ -11,8 +11,8 @@ Template: Divi
 }
 
 #main-header {
-/*background-color: #0D3A77;*/
-background-color: #DC6E24;
+background-color: #ab1f2d;
+/*background-color: #DC6E24;*/
 }
 
 #top-menu ul li a {
@@ -39,7 +39,7 @@ color: #fff;
 }
 
 #main-footer {
-    background-color: #DC6E24 !important;
+    background-color: #ab1f2d !important;
 }
 
 #footer-info, #footer-info a  {
@@ -113,6 +113,16 @@ color: #fff;
         background-position: 100px 30px;
     }
 
+    #title-text  {
+        display: inline;
+    }    
+
+    #title-text a {
+      font-size: 3em;
+      color: #000;
+    }    
+
+
 @media only screen and ( max-width: 479px ) {
 
   body {
@@ -121,6 +131,7 @@ color: #fff;
     background-color: #fff;
     line-height: 2em;
     }
+
 
   #logo {
     display: none;
@@ -136,13 +147,24 @@ color: #fff;
     height: 250px !important;
   }
 
-}    
+ 
 
 #et_mobile_nav_menu {
     margin: -40px 0 0 0;
 }
 
+    #title-text  {
+        width: 50%;
+        clear: both;
+        display: block;
+    }    
 
+
+#title-text a {
+      font-size: 1.8em;
+}    
+
+}/*end media 479*/
 /*    
 @media only screen and ( max-width: 800px ) { 
     #kenshoufer-boxes {
