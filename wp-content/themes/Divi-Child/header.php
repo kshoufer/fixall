@@ -45,12 +45,12 @@
                         
                         $logo_mobile = $home_url . '/wp-content/uploads/2014/05/logosmall.png';
 		?>
+			<div id="title-text">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" />
+				<!-- <img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" /> -->
+				<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>	
 			</a>
-                        			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img src="<?php echo esc_attr( $logo_mobile ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo_mobile" />
-			</a>
+			</div><!--end title-text-->
 
 
 			<div id="et-top-navigation">

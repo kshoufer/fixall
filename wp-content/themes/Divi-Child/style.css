@@ -11,8 +11,8 @@ Template: Divi
 }
 
 #main-header {
-/*background-color: #0D3A77;*/
-background-color: #DC6E24;
+background-color: #ab1f2d;
+/*background-color: #DC6E24;*/
 }
 
 #top-menu ul li a {
@@ -39,7 +39,7 @@ color: #fff;
 }
 
 #main-footer {
-    background-color: #DC6E24 !important;
+    background-color: #ab1f2d !important;
 }
 
 #footer-info, #footer-info a  {
@@ -113,7 +113,28 @@ color: #fff;
         background-position: 100px 30px;
     }
 
+    #title-text  {
+        display: inline;
+    }    
+
+    #title-text a {
+      font-size: 3em;
+      color: #000;
+    } 
+
+    .entry-content tr td {
+    border-top: 1px solid #EEE;
+    padding: 0; 
+    }
+
+
+
 @media only screen and ( max-width: 479px ) {
+
+  #main-content {
+     font-size: 1.5em;
+     line-height: 1.5em;
+    }
 
   #logo {
     display: none;
@@ -124,119 +145,26 @@ color: #fff;
     width: 50%;
   }
 
+  bgmp_map-canvas {
+    width: 300px !important;
+    height: 250px !important;
+  }
+
+ 
+
+#et_mobile_nav_menu {
+    margin: -40px 0 0 0;
+}
+
+    #title-text  {
+        width: 50%;
+        clear: both;
+        display: block;
+    }    
+
+
+#title-text a {
+      font-size: 1.8em;
 }    
 
-#et_mobile_nav_menu {
-    margin: -40px 0 0 0;
-}
-
-
-/*    
-@media only screen and ( max-width: 800px ) { 
-    #kenshoufer-boxes {
-        display: none;
-    }
-}
-*/
-/*
-.et_pb_slide {
-    box-shadow: none;
-    background-color: transparent;
-}
-
-.et_pb_slider .et_pb_slide, .et_pb_section {
-    background-size: contain;
-}
-
-.et_pb_section {
-    background-repeat: repeat;
-    background-size: 132px;
-}
-.et_pb_text p {
-    line-height: 1.5;
-    font-size: 25px;
-}
-
-
-#logo_mobile {
-    display: none;
-}
-
-.et_pb_promo_description {
-    font-size: 30px;
-}
-
-.et_pb_promo_description p {
-    line-height: 2;
-}
-
-.et_pb_contact p input, .et_pb_contact p textarea {
-    background-color: #fff;
-}
-
-.et-pb-arrow-next, .et-pb-arrow-prev {
-    font-size: 8em;
-}
-
-.main_title {
-    display: none;
-}
-
-#slider1 {
-    width: 100%;
-}
-
-#small-image {
-    display: none;
-}
-
-#et_top_search {
-    display: none;
-}
-
-.vfb-checkbox, .vfb-radio {
--webkit-appearance: checkbox;
-}
-
-.et_pb_slider .et_pb_slide {
-    box-shadow:none;
-}
-
-.et-pb-arrow-prev, .et-pb-arrow-next {
-    background-color: rgba(0, 0, 0, .07);
-}
-
-
-@media only screen and ( max-width: 479px ) {
-
-#small-image {
-    display: inline;
-}
-
-
-#home-slider
-{
-    display: none;
-}
-
-    
-.et_pb_slide {
-    box-shadow: none !important;
-    background-color: transparent !important;
-}
-
-#logo {
-    display: none;
-}
-
-#logo_mobile {
-    display: block;
-    width: 50%;
-}
-
-#et_mobile_nav_menu {
-    margin: -40px 0 0 0;
-}
-
-}*/
-/****end max-width: 479px****/
+}/*end media 479*/
