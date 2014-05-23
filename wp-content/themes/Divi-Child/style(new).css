@@ -1,0 +1,125 @@
+/*
+Theme Name: Divi Child
+Author: Ken Shoufer ken-shoufer.com
+Template: Divi
+*/
+
+@import url(../Divi/style.css);
+
+.et_pb_text {
+    min-height: 150px;
+}
+
+#main-content, .et_pb_section {
+    background-color: #cfdfef;
+}
+
+#content-area {
+    margin-top: 30px;
+}
+
+.et-fixed-header {
+ padding: 10px 0 10px 0 !important;
+}
+
+#top-menu ul li a {
+color: #fff;
+}
+
+#top-menu ul li a:hover {
+text-decoration: underline;
+color: #fff;
+}
+
+#et_top_search {
+    display: none;
+}
+
+
+#logo_mobile {
+    display: none;
+}
+
+#footer-info, #footer-info a  {
+    color: #fff;
+}
+
+.et-social-icon a {
+    color: #fff;
+}
+
+#content-area table td, #content-area table th {
+    padding: 0 .5em .5em 0;
+}
+
+#title-text  {
+    display: inline;
+}    
+
+#title-text a {
+  font-size: 3em;
+  color: #000;
+} 
+
+.entry-content tr td {
+  border-top: 1px solid #EEE;
+  padding: 0; 
+}
+
+.vfb-legend, .vfb-item-secret {
+  display: none !important;
+}
+
+
+@media only screen and ( max-width: 479px ) {
+
+
+  #main-content {
+     font-size: 1.5em;
+     line-height: 1.5em;
+    }
+
+    #left-area {
+        margin-top: 30px;
+    }
+
+  #logo {
+    display: none;
+  }
+
+  #logo_mobile {
+    display: block;
+    width: 50%;
+  }
+
+  bgmp_map-canvas {
+    width: 300px !important;
+    height: 250px !important;
+  }
+
+
+#et-top-navigation {
+    margin-right: 0px;
+    margin-top:-50px;
+}
+
+#et_mobile_nav_menu {
+    margin: -10px 0 0 0;
+}
+
+.et_mobile_menu {
+    top: 91px !important;
+}
+
+    #title-text  {
+        width: 50%;
+        clear: both;
+        display: block;
+    }    
+
+
+#title-text a {
+      font-size: 1.8em;
+}    
+
+}/*end media 479*/
