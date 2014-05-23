@@ -127,6 +127,10 @@ color: #fff;
     padding: 0; 
     }
 
+   .vfb-legend, .vfb-item-secret {
+    display: none !important;
+    }
+
 
 
 @media only screen and ( max-width: 479px ) {
