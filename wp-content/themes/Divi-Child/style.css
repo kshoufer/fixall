@@ -10,6 +10,11 @@ Template: Divi
     min-height: 150px;
 }
 
+#main-content {
+     font-size: 1.2em;
+     line-height: 1.5em;
+    }
+
 #main-content, .et_pb_section {
     background-color: #cfdfef;
 }
@@ -70,13 +75,34 @@ color: #fff;
   display: none !important;
 }
 
+/*-------------------[980px]------------------*/
+@media only screen and ( min-width: 768px ) and ( max-width: 980px ) {
 
+  .et_mobile_menu {
+      top: 91px !important;
+      background-color: #fff !important;
+  }
+
+}/*end media 980*/
+
+/*-------------------[480px]------------------*/
+@media only screen and ( max-width: 767px ) {
+
+  .et_mobile_menu {
+      top: 91px !important;
+      background-color: #fff !important;
+  }
+
+}/*end media 480*/
+
+
+/*-------------------[320px]------------------*/
 @media only screen and ( max-width: 479px ) {
 
 
   #main-content {
-     font-size: 1.5em;
-     line-height: 1.5em;
+     font-size: 1.3em;
+     line-height: 1.3em;
     }
 
     #left-area {
@@ -107,10 +133,6 @@ color: #fff;
     margin: -10px 0 0 0;
 }
 
-.et_mobile_menu {
-    top: 91px !important;
-    background-color: #fff !important;
-}
 
     #title-text  {
         width: 50%;
@@ -123,4 +145,4 @@ color: #fff;
       font-size: 1.8em;
 }    
 
-}/*end media 479*/
+}/*end media 320*/
