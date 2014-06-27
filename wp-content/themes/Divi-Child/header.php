@@ -37,6 +37,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<header id="main-header">
+		<div name="top"></div>
 		<div class="container clearfix">
 		<?php
 			$logo = ( $user_logo = et_get_option( 'divi_logo' ) ) && '' != $user_logo

@@ -34,19 +34,19 @@ if ($_SERVER['SERVER_NAME'] === "localhost") {
 } else {
     // ** MySQL settings - You can get this info from your web host ** //
     /** The name of the database for WordPress */
-    define('DB_NAME', 'backcou2_fixall');
+    define('DB_NAME', 'fixall');
     /** MySQL database username */
-    define('DB_USER', 'backcou2_bcr');
+    define('DB_USER', 'i519715_wp1');
     /** MySQL database password */
-    define('DB_PASSWORD', 'tR(SW28(P1');
+    define('DB_PASSWORD', 'A@Ud7(cp7S39*&1');
     /** MySQL hostname */
     define('DB_HOST', 'localhost');
     /** Database Charset to use in creating database tables. */
     define('DB_CHARSET', 'utf8');
     /** The Database Collate type. Don't change this if in doubt. */
     define('DB_COLLATE', '');
-    define('WP_HOME','http://dev1.ken-shoufer.com/fixall');
-    define('WP_SITEURL','http://dev1.ken-shoufer.com/fixall');
+    define('WP_HOME','http://FixmyplumbingLongBeach.com');
+    define('WP_SITEURL','http://FixmyplumbingLongBeach.com');
 };
 /*end added logic*/
 

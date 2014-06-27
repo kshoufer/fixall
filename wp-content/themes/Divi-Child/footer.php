@@ -33,6 +33,7 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 				?>
 
 						<p id="footer-info"><?php printf( __( 'Designed by %1$s', 'Divi' ), '<a href="http://ken-shoufer.com" title="Ken Shoufer Web Designs">Ken Shoufer Web Designs</a>' ); ?></p>
+						<h3><a style="color:white;" href="#top">[[GO TO TOP]]</a></h3>
 					</div>	<!-- .container -->
 				</div>
 			</footer> <!-- #main-footer -->
